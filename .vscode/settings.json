@@ -1,0 +1,139 @@
+{
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true,
+    "**/.git": true,
+    "**/.awcache": true,
+    "**/node_modules": true,
+    "**/tmp": true,
+    "**/dist": true
+  },
+
+  // My preferences
+  "editor.fontFamily": "Jetbrains Mono Variable",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.autoSave": "onFocusChange",
+  // "files.autoSave": "off",
+  // Formatting
+  // needed to add this in order to load Yarn 2 SDK's pnpified Prettier path (above)
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  // not sure if this is working...
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "prettier.jsxSingleQuote": true,
+  "sort-imports.default-sort-style": "module",
+  "sort-imports.languages": ["javascript", "typescript"],
+  // candy
+  "bracket-pair-colorizer-2.colors": [
+    "#ba7dff",
+    "#57a7ff",
+    "#32ed48",
+    "#FFEF00",
+    "#ffa54d",
+    "#ff7c78",
+    "#ff94ff"
+  ],
+  "bracket-pair-colorizer-2.highlightActiveScope": true,
+  "bracket-pair-colorizer-2.activeScopeCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}",
+    "opacity: 0.5"
+  ],
+  "bracket-pair-colorizer-2.showBracketsInGutter": true,
+  "bracket-pair-colorizer-2.showBracketsInRuler": true,
+  "bracket-pair-colorizer-2.scopeLineRelativePosition": true,
+  "bracket-pair-colorizer-2.scopeLineCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}",
+    "opacity: 0.5"
+  ],
+  // mysteriously not working; copied to user settings.json
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.languages.associations": {},
+  "material-icon-theme.folders.associations": {
+    "client": "App",
+    "cypress": "Pipe",
+    "lib": "Terraform",
+    "components": "Components",
+    "atoms": "React-components",
+    "molecules": "Cluster",
+    "organisms": "Debug",
+    "ui": "Shared",
+    "contexts": "Class",
+    "context": "Class",
+    "storybook": "Sass",
+    "types": "Typescript"
+  },
+  "material-icon-theme.files.associations": {},
+
+  // "editor.tokenColorCustomizations": {
+  //   "comments": "#3a5c3a"
+  // },
+
+  "colorful-comments.tags": [
+    {
+      "tag": "^",
+      "color": "#7d5d1d",
+      "strikethrough": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "!",
+      "color": "#993232",
+      "strikethrough": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#724687",
+      "strikethrough": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "&",
+      "color": "#0b6e63",
+      "strikethrough": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+
+  /*
+  * test
+  ^ warn test test test test test tes test test it out and see if it is too bright
+  ! danger test test test test test tes test test it out and see if it is too bright
+  ? question test test test test test tes test test it out and see if it is too bright
+  & info test test test test test tes test test it out and see if it is too bright
+  // strikethrough test test test test test tes test test it out and see if it is too bright
+*/
+
+  "window.zoomLevel": -1,
+  "workbench.statusBar.visible": true,
+  "maptz.camelcasenavigation": {
+    "allowToggleMode": true, //Allows you to use toggle mode
+    "isCamelNavigationOnByDefault": true //When toggle mode is on, determines whether Camel Navigation is on (true) or off (false) when the application starts.
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always"
+}

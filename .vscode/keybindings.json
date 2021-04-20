@@ -1,0 +1,4 @@
+{
+  "key": "ctrl+alt+shift+l",
+  "command": "maptz.camelcasenavigation.toggleCamelMode"
+}

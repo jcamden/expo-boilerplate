@@ -1,0 +1,23 @@
+// add these to your user snippets typescript.json file:
+{
+  // Place your snippets for typescriptreact here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+  // Example:
+  "console.log": {
+    "prefix": "cl",
+    "body": ["console.log($1)"],
+    "description": "console.log"
+  },
+  "eslint disable next line": {
+    "prefix": "esld",
+    "body": ["// eslint-disable-next-line"],
+    "description": "Use responsibly (euphemism for 'danger'). Disables eslint for next line; can specify a rule (e.h. @typescript-eslint/explicit-function-return-type"
+  },
+  "export * from package": {
+    "prefix": "exs",
+    "body": ["export * from '$1'"],
+    "description": "export * from package"
+  }
+}
