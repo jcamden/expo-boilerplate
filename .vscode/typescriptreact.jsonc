@@ -44,5 +44,10 @@
       "const [$1, set${name:${1/([a-z])/${1:/upcase}/}}] = useState<${1/([a-z])/${1:/upcase}/}>(initial${1/([a-z])/${1:/upcase}/});"
     ],
     "description": "tab stops (unlabeled): $1:name, $2:type, $0:initial values; Prettier recommended;"
+  },
+  "self-invoking asynchronous arrow function": {
+    "prefix": "siaf",
+    "body": ["(async () => {", "$1", "})()"],
+    "description": "tab stops (unlabeled): $1:name, $2:type, $0:initial values; Prettier recommended;"
   }
 }

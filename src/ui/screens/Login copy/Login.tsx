@@ -1,7 +1,8 @@
-import { Center } from '../../Center';
 import React from 'react';
 import { Text } from 'react-native';
 import tailwind from 'tailwind-rn';
+
+import { Center } from '../../utils/Center';
 
 interface LoginProps {}
 
