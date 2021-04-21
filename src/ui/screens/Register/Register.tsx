@@ -2,8 +2,8 @@ import React from 'react';
 import { Button, Text } from 'react-native';
 import tailwind from 'tailwind-rn';
 
-import { AuthNavProps } from '../../../routes';
-import { Center } from '../../utils';
+import { AuthNavProps } from '../../../routes/AuthParamList';
+import { Center } from '../../utils/Center/Center';
 
 export const Register: React.FC<AuthNavProps<'Login'>> = ({ navigation }) => {
   return (

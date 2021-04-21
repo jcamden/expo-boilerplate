@@ -5,25 +5,27 @@ import React, { useContext, useEffect, useState } from 'react';
 import { ActivityIndicator, Text } from 'react-native';
 
 import { AuthContext } from '../state/AuthProvider';
-import { Center, Login, Register } from '../ui';
+import { Login } from '../ui/screens/Login/Login';
+import { Register } from '../ui/screens/Register/Register';
+import { Center } from '../ui/utils/Center/Center';
 import { AuthParamList } from './AuthParamList';
+import { AppTabs } from './tabs/AppTabs';
 
 interface RoutesProps {}
 
 const Stack = createStackNavigator<AuthParamList>();
 
 export const Routes: React.FC<RoutesProps> = ({}) => {
-  const { user } = useContext(AuthContext);
+  const { user, login } = useContext(AuthContext);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     (async () => {
       const userJSONString = await AsyncStorage.getItem('user');
-      userJSONString
-        ? (async () => {
-            //decode it
-          })()
-        : setLoading(false);
+      console.log(userJSONString);
+      // faking login for now. In reality, decode and login.
+      userJSONString && login();
+      setLoading(false);
     })();
   }, []);
 
@@ -34,9 +36,7 @@ export const Routes: React.FC<RoutesProps> = ({}) => {
           <ActivityIndicator size="large" color="green" />
         </Center>
       ) : user ? (
-        <Center>
-          <Text>You exist.</Text>
-        </Center>
+        <AppTabs />
       ) : (
         <NavigationContainer>
           <Stack.Navigator

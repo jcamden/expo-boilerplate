@@ -28,6 +28,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
           AsyncStorage.setItem('user', JSON.stringify(fakeUser));
         },
         logout: () => {
+          setUser(null);
           // TODO trycatch and handle error
           AsyncStorage.removeItem('user');
         },

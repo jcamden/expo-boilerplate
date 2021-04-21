@@ -2,9 +2,9 @@ import React, { useContext } from 'react';
 import { Button, Text } from 'react-native';
 import tailwind from 'tailwind-rn';
 
-import { AuthNavProps } from '../../../routes';
-import { AuthContext } from '../../../state';
-import { Center } from '../../utils';
+import { AuthNavProps } from '../../../routes/AuthParamList';
+import { AuthContext } from '../../../state/AuthProvider';
+import { Center } from '../../utils/Center/Center';
 
 export const Login: React.FC<AuthNavProps<'Login'>> = ({
   navigation,
