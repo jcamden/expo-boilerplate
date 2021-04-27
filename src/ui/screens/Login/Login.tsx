@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Button, Text } from 'react-native';
 import tailwind from 'tailwind-rn';
 
-import { AuthNavProps } from '../../../routes/AuthParamList';
+import { AuthNavProps } from '../../../Routes/AuthStack/AuthParamList';
 import { AuthContext } from '../../../state/AuthProvider';
 import { Center } from '../../utils/Center/Center';
 

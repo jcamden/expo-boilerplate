@@ -14,6 +14,7 @@
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "files.autoSave": "onFocusChange",
   // "files.autoSave": "off",
   // Formatting
@@ -134,6 +135,5 @@
   "maptz.camelcasenavigation": {
     "allowToggleMode": true, //Allows you to use toggle mode
     "isCamelNavigationOnByDefault": true //When toggle mode is on, determines whether Camel Navigation is on (true) or off (false) when the application starts.
-  },
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  }
 }
